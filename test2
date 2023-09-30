@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Image in HTML</title>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+        <!-- Embedding the image using a data URL -->
+        <image href="https://raw.githubusercontent.com/MiddleClickGifs/middleclick/main/mathsaviour/middle.png" width="300" height="200"/>
+    </svg>
+
+</body>
+</html>
