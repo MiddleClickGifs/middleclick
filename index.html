@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <title>Display HTML Content as Image</title>
+</head>
+<body>
+    <iframe id="html-iframe" width="500" height="300" frameborder="0"></iframe>
 
-    <!-- Thumbnail image/gif -->
-    <meta property="og:image" content="https://i.ibb.co/mRj9pKt/middle.png">
-    
-    <!-- Stole the memes from https://github.com/iwakkrg/iwakkrg.github.io -->
-    
-    <!-- Redirect -->
-    <meta http-equiv="refresh" content="0; url=calculator::" />
-  </head>
-  <body>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Use jQuery to fetch the HTML content of www.example.com/index.html
+        $.get("https://raw.githubusercontent.com/MiddleClickGifs/middleclick/main/mathsaviour/middle.png", function(data) {
+            // Set the HTML content as the source of the iframe
+            document.getElementById("html-iframe").contentDocument.write(data);
+        });
+    </script>
+</body>
 </html>
